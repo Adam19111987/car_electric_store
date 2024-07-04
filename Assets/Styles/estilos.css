@@ -1,10 +1,90 @@
-/* media querys */
+/* globales */
+:root {
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para Box Model **/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px */
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
 /* pantalla Escritorio */
 
-@media(max-width: 1200px) and (min-width:992px ){}
-  /* pantalla de tablet horizontal */
-@media(max-width:991px ) and (min-width:768px){}
-  /* pantalla tablet vertical md */
-@media(max-width: 767 ) and (min-width: 576px){}
+.container-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: .4fr 3fr .4fr;
+  gap: 10px;
+  grid-template-areas:
+    "B A A A A"
+    "B C C C C"
+    "B H H H H";
+}
+
+header {
+  grid-area: A;
+  background-color: blue;
+
+}
+
+aside {
+  grid-area: B;
+  background-color: rgba(255, 0, 153, 0.658);
+}
+
+main {
+  grid-area: C;
+  background-color: green;
+  
+}
+
+footer {
+  grid-area: H;
+  background-color: black;
+}
+
+header, aside, main, footer{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+/* media querys */
+
+/* pantalla de tablet horizontal */
+@media (max-width: 991px) and (min-width: 568px) {
+  .container-grid {
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: .5fr 4fr .5fr;
+    grid-template-areas:
+      "B B B B B"
+      "A C C C C"
+      "H H H H H";
+  }
+}
+
 /* pantalla celular sm */
-@media( max-width:567px) and (min-width:180px ){}
+@media (max-width: 567px) and (min-width: 180px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 3fr .5fr;
+    grid-template-areas:
+      "B B B B B"
+      "A A A A A"
+      "C C C C C"
+      "H H H H H";
+  }
+}
