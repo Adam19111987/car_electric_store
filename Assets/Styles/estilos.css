@@ -1,5 +1,11 @@
 /* globales */
 :root {
+ --FuentePrincipal:  "Roboto", sans-serif;
+ --FuenteSecundaria:"Poppins", sans-serif;
+ --gray: 	#d3d3d3;
+ --graydark:	#696969;
+ --blue:#0000ff;
+ --Royalazul:	#4169e1;
 }
 
 html {
@@ -19,40 +25,53 @@ body {
   margin: 0 auto;
 }
 
+
+ul li{
+  list-style: none;
+  
+
+  
+}
+a{
+  text-decoration: none;
+}
+
 /* pantalla Escritorio */
 
 .container-grid {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1.5fr 6fr;
   grid-template-rows: .4fr 3fr .4fr;
-  gap: 10px;
+ 
   grid-template-areas:
     "B A A A A"
     "B C C C C"
-    "B H H H H";
+    "H C C C C ";
 }
 
 header {
   grid-area: A;
+  background-color: var(--gray);
 
 
 }
 
 aside {
   grid-area: B;
-  background-color: rgba(255, 0, 153, 0.658);
+  background-color: var(--Royalazul);
 }
 
 main {
   grid-area: C;
-  background-color: green;
+  
   
 }
 
 footer {
   grid-area: H;
-  background-color: black;
+  background-color: var(--blue);
+  height: 150px;
 }
 
 header, aside, main, footer{
@@ -61,7 +80,65 @@ header, aside, main, footer{
   text-align: center;
   font-weight: 700;
   font-size: 30px;
+  
 }
+
+/* Buscador */
+
+
+header h3{
+  color: var(--graydark);
+  font-size: 23px;
+  font-family: var(--FuentePrincipal);
+  font-weight: 600;
+  margin-bottom: 2px;
+
+}
+
+.opcion{
+  width: 90%;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: var(--FuentePrincipal);
+  font-weight: 500;
+  color: var(--graydark);
+  padding: 10px;
+}
+.opcion_item{
+  color: var(--graydark);
+  font-size: 18px;
+  font-family: var(--FuentePrincipal);
+  font-weight: 500;
+}
+
+/* navegacion */
+
+.navegacion-principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+}
+.logotipo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nvas{
+  color: white;
+  line-height: 50px;
+ 
+  font-size: 2rem;
+  font-family: var(--FuenteSecundaria);
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+
 /* media querys */
 
 /* pantalla de tablet horizontal */
