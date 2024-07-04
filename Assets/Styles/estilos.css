@@ -1,3 +1,23 @@
+
+/* globales */
+:root{}
+
+
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para Box Model **/}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px */
+
+}
+
 /* media querys */
 /* pantalla Escritorio */
 
