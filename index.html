@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/Styles/normalize.css">
-    <link rel="stylesheet" href="./Assets/Styles/estilos.css">
-<!--Kits de Script-->
-<script src="https://kit.fontawesome.com/920379bed9.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/Styles/normalize.css" />
+    <link rel="stylesheet" href="./Assets/Styles/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Kits de Script-->
+    <script
+      src="https://kit.fontawesome.com/920379bed9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-grid">
-     <header>BUSCADOR</header>
-    <aside>NAVEGACION</aside>
-    <main>PRINCIPAL</main>
-    <footer>PIE</footer>
+      <header>
+        <h3>Ordenar por</h3>
+
+        <select name="opciones" id="opciones" class="opcion">
+          <option class="opcion_item" value="option1">Precio</option>
+          <option class="opcion_item" value="option2">Año</option>
+          <option class="opcion_item" value="option1">Marca</option>
+          <option class="opcion_item" value="option1">Modelo</option>
+        </select>
+      </header>
+      <aside>
+        <div class="logotipo">
+          <i class="fa-solid fa-car"></i>
+          <h4 class="logotipo_titulo"><span>C</span>ars Electric</h4>
+        </div>
+        <nav>
+          <ul class="navegacion-principal">
+            <li><a class="nvas" href="#">Inicio</a></li>
+            <li><a class="nvas" href="#">Catalogo</a></li>
+            <li><a class="nvas" href="#">Ofertas</a></li>
+            <li><a class="nvas" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>PRINCIPAL</main>
+      <footer>PIE</footer>
     </div>
-</body>
+  </body>
 </html>
