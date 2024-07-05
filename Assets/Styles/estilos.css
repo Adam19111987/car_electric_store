@@ -3,6 +3,7 @@
   --FuentePrincipal: "Roboto", sans-serif;
   --FuenteSecundaria: "Poppins", sans-serif;
   --Fuentetercera: "Ga Maamli", sans-serif;
+  --Fuentequarta : "Grenze Gotisch", serif;
   --gray: #d3d3d3;
   --graydark: #696969;
   --blue: #0000ff;
@@ -198,6 +199,14 @@ border-radius: 6px;
   color: yellow;
 }
 
+.cars h4{
+  color:var(--graydark) ;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-size: var(--Fuentequarta);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .cars:nth-child(1){
 
   background-image:url(../img/imagen\ 1.jpg);
