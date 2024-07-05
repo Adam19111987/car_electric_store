@@ -1,12 +1,12 @@
 /* globales */
 :root {
- --FuentePrincipal:  "Roboto", sans-serif;
- --FuenteSecundaria:"Poppins", sans-serif;
- --Fuentetercera:"Ga Maamli", sans-serif;
- --gray: 	#d3d3d3;
- --graydark:	#696969;
- --blue:#0000ff;
- --Royalazul:	#4169e1;
+  --FuentePrincipal: "Roboto", sans-serif;
+  --FuenteSecundaria: "Poppins", sans-serif;
+  --Fuentetercera: "Ga Maamli", sans-serif;
+  --gray: #d3d3d3;
+  --graydark: #696969;
+  --blue: #0000ff;
+  --Royalazul: #4169e1;
 }
 
 html {
@@ -26,14 +26,10 @@ body {
   margin: 0 auto;
 }
 
-
-ul li{
+ul li {
   list-style: none;
-  
-
-  
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -43,8 +39,8 @@ a{
   height: 100vh;
   display: grid;
   grid-template-columns: 1.5fr 6fr;
-  grid-template-rows: .4fr 3fr .4fr;
- 
+  grid-template-rows: 0.4fr 3fr 0.4fr;
+
   grid-template-areas:
     "B A A A A"
     "B C C C C"
@@ -54,8 +50,6 @@ a{
 header {
   grid-area: A;
   background-color: var(--gray);
-
-
 }
 
 aside {
@@ -65,8 +59,6 @@ aside {
 
 main {
   grid-area: C;
-  
-  
 }
 
 footer {
@@ -75,28 +67,28 @@ footer {
   height: 150px;
 }
 
-header, aside, main, footer{
+header,
+aside,
+main,
+footer {
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
-  
 }
 
 /* Buscador */
 
-
-header h3{
+header h3 {
   color: var(--graydark);
   font-size: 23px;
   font-family: var(--FuentePrincipal);
   font-weight: 600;
   margin-bottom: 2px;
-
 }
 
-.opcion{
+.opcion {
   width: 90%;
   background-color: white;
   margin-bottom: 20px;
@@ -106,7 +98,7 @@ header h3{
   color: var(--graydark);
   padding: 10px;
 }
-.opcion_item{
+.opcion_item {
   color: var(--graydark);
   font-size: 18px;
   font-family: var(--FuentePrincipal);
@@ -115,69 +107,74 @@ header h3{
 
 /* navegacion */
 
-.navegacion-principal{
+.navegacion-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 26px;
 }
-.logotipo{
+.logotipo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.logotipo i{
+.logotipo i {
   color: white;
   font-size: 60px;
 }
 
-.logotipo_titulo{
+.logotipo_titulo {
   font-family: var(--Fuentetercera);
   color: white;
   font-weight: 500;
 }
 
-.logotipo_titulo span{
+.logotipo_titulo span {
   font-size: 50px;
   font-weight: 700;
 }
 
-.nvas{
+.nvas {
   color: white;
   line-height: 50px;
- 
+
   font-size: 2rem;
   font-family: var(--FuenteSecundaria);
   font-weight: 700;
   text-transform: uppercase;
-
+}
+.haburguesa{
+  display: none;
+  
+  
 }
 
-/* Pie */ 
 
-.pie{
+
+
+/* Pie */
+
+.pie {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  
 }
 
-.pie_pag{
+.pie_pag {
   display: flex;
   align-items: center;
-   gap: 20px;
+  gap: 20px;
   margin-bottom: 30px;
 }
 
-.pie_pag i{
+.pie_pag i {
   color: white;
-  
 }
 
-.pie p{
+.pie p {
   font-size: 1.6rem;
   color: white;
   font-family: var(--FuenteSecundaria);
@@ -190,11 +187,44 @@ header h3{
 @media (max-width: 991px) and (min-width: 568px) {
   .container-grid {
     grid-template-columns: 1.5fr 4fr;
-    grid-template-rows: .5fr 4fr .5fr;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
     grid-template-areas:
       "B B B B B"
       "A C C C C"
       "H H H H H";
+  }
+  aside {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+  }
+  .navegacion-principal {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 33px;
+  }
+  .logotipo {
+    justify-content: start;
+    margin-right: 101px;
+  }
+
+  .logotipo_titulo {
+    font-size: 20px;
+  }
+
+  .logotipo_titulo span {
+    font-size: 25px;
+  }
+  .nvas {
+    font-size: 1.5rem;
+  }
+
+  .logotipo i {
+    font-size: 30px;
+  }
+
+  .haburguesa{
+    display: none;
   }
 }
 
@@ -202,11 +232,49 @@ header h3{
 @media (max-width: 567px) and (min-width: 180px) {
   .container-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1fr 3fr .5fr;
+    grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
     grid-template-areas:
       "B B B B B"
       "A A A A A"
       "C C C C C"
       "H H H H H";
   }
+
+aside{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
 }
+
+  .logotipo_titulo {
+    font-size: 20px;
+  }
+
+  .logotipo_titulo span {
+    font-size: 25px;
+  }
+
+  .logotipo i {
+    font-size: 30px;
+  }
+ .navegacion{
+  display: none;
+ }
+ .haburguesa{
+  display: block;
+  
+  
+  
+ }
+
+ .icon_hamburhuesa{
+  
+  color: white;
+  cursor: pointer;
+ }
+
+
+ }
+
+
