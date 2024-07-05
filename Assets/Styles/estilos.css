@@ -2,6 +2,7 @@
 :root {
  --FuentePrincipal:  "Roboto", sans-serif;
  --FuenteSecundaria:"Poppins", sans-serif;
+ --Fuentetercera:"Ga Maamli", sans-serif;
  --gray: 	#d3d3d3;
  --graydark:	#696969;
  --blue:#0000ff;
@@ -119,12 +120,28 @@ header h3{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 96px;
+  margin-top: 26px;
 }
 .logotipo{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+}
+.logotipo i{
+  color: white;
+  font-size: 60px;
+}
+
+.logotipo_titulo{
+  font-family: var(--Fuentetercera);
+  color: white;
+  font-weight: 500;
+}
+
+.logotipo_titulo span{
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .nvas{
