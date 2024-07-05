@@ -170,6 +170,7 @@ main{
   align-items: center;
   width: 100%;
   height: 350px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 -webkit-box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
@@ -179,7 +180,7 @@ box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
 
 .cars:nth-child(1){
 
-  background-image:url(../img/imagen\ 1.png);
+  background-image:url(../img/imagen\ 1.jpg);
 }
 
 
@@ -193,7 +194,7 @@ box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
 
 .cars:nth-child(3){
  
-  background-image: url(../img/imagen\ 12.jpg);
+  background-image: url(../img/imagen\ 3.jpg)
   
 }
 
@@ -210,7 +211,7 @@ box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
 }
 .cars:nth-child(6){
 
-  background-image:url(../img/imagen\ 6.jpg);
+  background-image:url(../img/imagen\ 6.jpeg);
 }
 .cars:nth-child(7){
  
