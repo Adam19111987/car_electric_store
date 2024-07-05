@@ -173,9 +173,29 @@ main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 10px;
 -webkit-box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
 -moz-box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
 box-shadow: 17px 5px 24px 12px rgba(0,0,0,0.75);
+border-radius: 6px;
+}
+
+.cars button{
+  background-color: blue;
+  color: white;
+  font-family: var(--FuentePrincipal);
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 6px;
+  width: 40%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.cars button:hover{
+  cursor: pointer;
+  color: yellow;
 }
 
 .cars:nth-child(1){
