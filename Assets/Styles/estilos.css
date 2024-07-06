@@ -201,9 +201,9 @@ border-radius: 6px;
 
 .cars h4{
   color:var(--graydark) ;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
-  font-size: var(--Fuentequarta);
+  font-family: var(--Fuentequarta);
   font-weight: 600;
   margin-bottom: 10px;
 }
