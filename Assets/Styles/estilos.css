@@ -270,7 +270,65 @@ border-radius: 6px;
   background-image:url(../img/imagen\ 11.jpg);
  
 }
+.container{
+  display: none;
+}
 
+/* slider */
+.slider_wraper{
+  position: relative;
+  max-width: 600px;
+
+  margin: 0 auto;
+}
+
+.slider{
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 .25rem .5rem #21212126;
+  border-radius: .5rem;
+}
+
+
+.slider img {
+  flex: 0 1 100%;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+
+.contenedor1{
+  display: none;
+
+ }
+ 
+ .paginacion{
+     background-color: gray;
+     padding: 10px;
+     border-radius: 40px;
+ }
+ 
+ .paginacion a{
+   text-decoration: none;
+   font-size: 16px;
+   
+   
+   line-height: 10px;
+   text-align: center;
+   color: blue;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 400;
+   transition: .2s linear;
+ 
+   
+ }
+ 
+ .paginacion a:hover{
+     color: whitesmoke;
+     background-color: aqua;
+ }
 
 
 /* Pie */
@@ -345,6 +403,20 @@ border-radius: 6px;
   .haburguesa{
     display: none;
   }
+  .contenido_principal{
+    display: none;
+  }
+  .container{
+    display: block;
+  }
+  .contenedor1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+   
+   }
 }
 
 /* pantalla celular sm */
@@ -393,6 +465,23 @@ aside{
   cursor: pointer;
  }
 
+ .contenido_principal{
+  display: none;
+}
+.container{
+  display: block;
+}
+
+.contenedor1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+ }
+ .paginacion a{
+  font-size: 14px;
+ }
 
  }
 
