@@ -4,4 +4,4 @@
 
 ## Adam
 
-- https://verdant-syrniki-3ee084.netlify.app/#slider-11
+-https://extraordinary-churros-404943.netlify.app/
